@@ -10,6 +10,9 @@ const createRegisterpatients = async (req, res) => {
     const registerpatients = await registerpatients.create({
       PatientID,
       name,
+      gender,
+      phonenumber,
+      contact
     });
 
     return res.status(200).json({
